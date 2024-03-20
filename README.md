@@ -9,6 +9,8 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Production 
+Para ver la app en production https://ibminterview.rosystems.net/
 
 ## Build
 
