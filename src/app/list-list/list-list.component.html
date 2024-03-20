@@ -1,0 +1,25 @@
+<!--<div>
+    <input [(ngModel)]="appointTitle" placeholder="Appointment des">
+    <input [(ngModel)]="appointDate" type="date" placeholder="Appointment DAte">
+    <button (click)="addApoint()">Add</button>
+</div>
+
+<ul>
+    <li *ngFor="let appoi of appointments">
+        {{appoi.id}}         {{appoi.title}}         {{appoi.date | date: 'dd-MM-yyyy'}}
+
+
+    </li>
+</ul>-->
+<div class="container">
+    
+    <div style="align-items: center; text-align:center;">
+        <h1>Ejercicio skip 5 objects limitando 30</h1>
+        <mat-spinner style="margin:0 auto;" *ngIf="loading"></mat-spinner>
+            <ul>
+                <li *ngFor="let i of dataIsra">
+                  id  {{i.id}}  {{i.brand}} {{i.category}} {{i.discountPercentage}}
+                </li>
+            </ul>
+    </div>
+</div>
