@@ -15,7 +15,12 @@
     
     <div style="align-items: center; text-align:center;">
         <h1>Ejercicio skip 5 objects limitando 30</h1>
-        <mat-spinner style="margin:0 auto;" *ngIf="loading"></mat-spinner>
+        <br>
+            <p>1.- Inicialmente carga la informacion haciendo el request al endpoint products y lo guarda en el cache, context class.</p>
+            <p>2.- Al hacer click en el boton skip 5, manipula la informacion guardada en el cache para no hacer muchos requests al servidor con el parametro skip en el url. </p>
+            <button *ngIf="!loading" (click)="skipCinco()" type="button" class="btn btn-primary">skip 5</button>
+            <mat-spinner style="margin:0 auto;" *ngIf="loading"></mat-spinner>
+             <h2>Lista de Object</h2>
             <ul>
                 <li *ngFor="let i of dataIsra">
                   id  {{i.id}}  {{i.brand}} {{i.category}} {{i.discountPercentage}}

@@ -14,7 +14,7 @@ export class DataService {
 
   nextProd(callBackespera:(st:boolean)=>void){
     /***         Aqui cambie de tipo a any para obtener el value array del element products*/
-    this.http.get<any>(this.urlApi+`?skip=5`, {observe:'response'})
+    this.http.get<any>(this.urlApi, {observe:'response'})
     .subscribe((result)=>{
       console.log("data", result.body.products);
       this.num=result.body.products || [];
@@ -23,7 +23,6 @@ export class DataService {
       console.log("arr",this.num)
       this.context.setDa(this.num)
       callBackespera(true);
-      console.log("con",this.context.getDa())
     })
   }
 }
