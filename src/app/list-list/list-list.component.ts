@@ -44,4 +44,10 @@ export class ListListComponent {
       this.dataIsra=this.context.getDa();
     }
   }
+  skipCinco(){
+    this.context.setDa(this.dataIsra.slice(5))
+    this.dataIsra=this.context.getDa();
+    console.log("skiped5",this.dataIsra)
+
+  }
 }
